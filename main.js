@@ -1,3 +1,3 @@
-const leftpad = require("leftpad");
+require("./style.css");
 
-document.write("tunguy!");
+modules.exports = "MainJS"
