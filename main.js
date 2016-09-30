@@ -1,3 +1,1 @@
-require("./style.css");
-
-modules.exports = "MainJS"
+module.exports = "MainJS"

@@ -6,6 +6,8 @@ module.exports = {
       "main": ["./main.js"]
   },
   output: {
+    libraryTarget: "this",
+    library: "TuanLibrary",
     path: path.join(__dirname, "dist"),
     filename: "[name].js"       
   },
