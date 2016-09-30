@@ -42,21 +42,46 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/*!******************!*\
+  !*** multi test ***!
+  \******************/
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(1);
-	module.exports = __webpack_require__(2);
+	module.exports = __webpack_require__(/*! ./test.js */2);
 
 
 /***/ },
-/* 1 */
+/* 1 */,
+/* 2 */
+/*!*****************!*\
+  !*** ./test.js ***!
+  \*****************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	__webpack_require__(/*! ./test1 */ 3);
+	__webpack_require__(/*! ./test2 */ 4);
+
+/***/ },
+/* 3 */
+/*!******************!*\
+  !*** ./test1.js ***!
+  \******************/
 /***/ function(module, exports) {
+
+	"use strict";
 
 	module.exports = "test1";
 
 /***/ },
-/* 2 */
+/* 4 */
+/*!******************!*\
+  !*** ./test2.js ***!
+  \******************/
 /***/ function(module, exports) {
+
+	"use strict";
 
 	module.exports = "test2";
 

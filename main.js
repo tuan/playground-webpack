@@ -1,1 +1,3 @@
-module.exports = "MainJS"
+var path = require('path');
+
+module.exports = "MainJs";
